@@ -20,4 +20,8 @@ func main() {
 	d4p1, d4p2 := day4(d4)
 	fmt.Println("day 4 part 1 -> ", d4p1)
 	fmt.Println("day 4 part 2 -> ", d4p2)
+
+	d5p1, d5p2 := day5(d5)
+	fmt.Println("day 5 part 1 -> ", d5p1)
+	fmt.Println("day 5 part 2 -> ", d5p2)
 }

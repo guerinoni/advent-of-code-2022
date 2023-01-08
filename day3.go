@@ -13,7 +13,7 @@ func day3(input string) (int, int) {
 
 	lines := strings.Split(input, "\n")
 
-	return p1(lines), p2(lines)
+	return d3p1(lines), d3p2(lines)
 }
 
 func common(s1 string, s2 string) []rune {
@@ -37,7 +37,7 @@ func common(s1 string, s2 string) []rune {
 	return com
 }
 
-func p1(lines []string) int {
+func d3p1(lines []string) int {
 	priority := 0
 	for _, line := range lines {
 		left := line[:len(line)/2]
@@ -65,7 +65,7 @@ func calculatePriority(com []rune) int {
 	return s
 }
 
-func p2(lines []string) int {
+func d3p2(lines []string) int {
 	sum := 0
 	group := []string{}
 	for idx, line := range lines {
