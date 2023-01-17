@@ -7,8 +7,7 @@ import (
 )
 
 func TestDay2(t *testing.T) {
-	input :=
-		`A Y
+	input := `A Y
 B X
 C Z`
 

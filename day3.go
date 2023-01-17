@@ -10,7 +10,6 @@ import (
 var d3 string
 
 func day3(input string) (int, int) {
-
 	lines := strings.Split(input, "\n")
 
 	return d3p1(lines), d3p2(lines)

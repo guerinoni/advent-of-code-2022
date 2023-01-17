@@ -99,6 +99,5 @@ func isPaper(ch string) bool {
 }
 
 func isSissor(ch string) bool {
-
 	return ch == "Z" || ch == "C"
 }

@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestDay4(t *testing.T) {
-	input :=
-		`2-4,6-8
+	input := `2-4,6-8
 2-3,4-5
 5-7,7-9
 2-8,3-7

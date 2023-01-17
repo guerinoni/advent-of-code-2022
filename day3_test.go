@@ -7,8 +7,7 @@ import (
 )
 
 func TestDay3(t *testing.T) {
-	input :=
-		`vJrwpWtwJgWrhcsFMMfFFhFp
+	input := `vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
 wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn

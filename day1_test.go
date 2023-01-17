@@ -7,8 +7,7 @@ import (
 )
 
 func TestDay1(t *testing.T) {
-	input :=
-		`1000
+	input := `1000
 2000
 3000
 
