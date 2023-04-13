@@ -10,8 +10,8 @@ import (
 var d11 string
 
 type monkey struct {
-	startingItems []int
 	operation     string
+	startingItems []int
 	testDivisible int
 	ifTrue        int
 	ifFalse       int

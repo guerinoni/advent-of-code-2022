@@ -11,8 +11,8 @@ var d13 string
 
 type packet struct {
 	parent *packet
-	value  int
 	items  []*packet
+	value  int
 }
 
 func day13(input string) (int, int) {
@@ -80,11 +80,11 @@ func whichGreater(lhs packet, rhs packet) int {
 	}
 
 	if lhs.value >= 0 {
-		return whichGreater(packet{nil, -1, []*packet{&lhs}}, rhs)
+		return whichGreater(packet{nil, []*packet{&lhs}, -1}, rhs)
 	}
 
 	if rhs.value >= 0 {
-		return whichGreater(lhs, packet{nil, -1, []*packet{&rhs}})
+		return whichGreater(lhs, packet{nil, []*packet{&rhs}, -1})
 	}
 
 	var i int
@@ -104,14 +104,14 @@ func whichGreater(lhs packet, rhs packet) int {
 }
 
 func parsePacket(line string) packet {
-	root := packet{nil, -1, []*packet{}}
+	root := packet{nil, []*packet{}, -1}
 	current := &root
 
 	var currentNumber string
 	for _, c := range line {
 		switch c {
 		case '[':
-			newpacket := packet{current, -1, []*packet{}}
+			newpacket := packet{current, []*packet{}, -1}
 			current.items = append(current.items, &newpacket)
 			current = &newpacket
 		case ']':
@@ -135,7 +135,7 @@ func parsePacket(line string) packet {
 }
 
 func newPacket(current *packet) *packet {
-	newPacket := packet{current, -1, []*packet{}}
+	newPacket := packet{current, []*packet{}, -1}
 	current.items = append(current.items, &newPacket)
 	current = &newPacket
 	return &newPacket

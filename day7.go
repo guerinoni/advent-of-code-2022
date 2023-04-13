@@ -10,10 +10,10 @@ import (
 var d7 string
 
 type Node struct {
-	name   string
 	parent *Node
-	size   int
+	name   string
 	kids   []*Node
+	size   int
 }
 
 func day7(input string) (int, int) {
