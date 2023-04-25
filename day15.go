@@ -7,8 +7,6 @@ import (
 	"strings"
 )
 
-// returns true if the point is inside a sensor range, false otherwise
-
 //go:embed input/day15
 var d15 string
 
