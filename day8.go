@@ -8,7 +8,7 @@ import (
 //go:embed input/day8
 var d8 string
 
-//type Point struct {
+//type point struct {
 //	x int
 //	y int
 //
