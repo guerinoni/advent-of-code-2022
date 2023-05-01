@@ -54,7 +54,7 @@ func day16(input string) (int, int) {
 	for canContinue {
 		canContinue = false
 		distance++
-		for k, _ := range valves {
+		for k := range valves {
 			for k2, val2 := range valves {
 				if _, ok := shortest[k+k2]; ok {
 					continue

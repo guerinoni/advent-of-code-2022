@@ -8,13 +8,6 @@ import (
 //go:embed input/day8
 var d8 string
 
-//type point struct {
-//	x int
-//	y int
-//
-//	value int32
-//}
-
 func day8(input string) (int, int) {
 	rows := strings.Split(input, "\n")
 

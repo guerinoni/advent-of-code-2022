@@ -62,7 +62,7 @@ func distanceFrom(start, target point, heightmap [][]rune) int {
 		toVisit = toVisit[1:]
 
 		dist := distanceFromStart[current] + 1
-		for _, neigh := range neighbours() {
+		for _, neigh := range getNeighbours() {
 			i := neigh[0]
 			j := neigh[1]
 			nextPoint := point{current.x + j, current.y + i}
@@ -90,6 +90,6 @@ func isInMap(p point, heightmap [][]rune) bool {
 	return p.x >= 0 && p.y >= 0 && p.x < len(heightmap[0]) && p.y < len(heightmap)
 }
 
-func neighbours() [][]int {
+func getNeighbours() [][]int {
 	return [][]int{{1, 0}, {0, -1}, {-1, 0}, {0, 1}}
 }
