@@ -76,4 +76,8 @@ func main() {
 	d18p1, d18p2 := day18(d18)
 	fmt.Println("day 18 part 1 -> ", d18p1)
 	fmt.Println("day 18 part 2 -> ", d18p2)
+
+	d19p1, d19p2 := day19(d19)
+	fmt.Println("day 19 part 1 -> ", d19p1)
+	fmt.Println("day 19 part 2 -> ", d19p2)
 }
