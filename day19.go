@@ -32,7 +32,6 @@ func day19(input string) (int, int) {
 			"Blueprint %d: Each ore robot costs %d ore. Each clay robot costs %d ore. Each obsidian robot costs %d ore and %d clay. Each geode robot costs %d ore and %d obsidian.",
 			&blue.id, &blue.oreRobotCost, &blue.clayRobotCost, &blue.obsidianRobotCost[0], &blue.obsidianRobotCost[1], &blue.geodeRobotCost[0], &blue.geodeRobotCost[1],
 		)
-
 		if err != nil {
 			panic("scan error")
 		}
