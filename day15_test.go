@@ -25,7 +25,7 @@ Sensor at x=20, y=1: closest beacon is at x=15, y=3
 	{
 		p1, p2 := day15(input, 10)
 		assert.Equal(t, 26, p1)
-		assert.Equal(t, 56000011, p2)
+		assert.Equal(t, 8000026, p2)
 	}
 	{
 		p1, p2 := day15(d15, 2000000)
