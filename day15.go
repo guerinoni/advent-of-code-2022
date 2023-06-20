@@ -16,10 +16,7 @@ func day15(input string, yLineToMonitor int) (int, int) {
 	for _, line := range lines {
 		var sensor point
 		var beacon point
-		_, err := fmt.Sscanf(line, "Sensor at x=%d, y=%d: closest beacon is at x=%d, y=%d", &sensor.x, &sensor.y, &beacon.x, &beacon.y)
-		if err != nil {
-			panic(err)
-		}
+		fmt.Sscanf(line, "Sensor at x=%d, y=%d: closest beacon is at x=%d, y=%d", &sensor.x, &sensor.y, &beacon.x, &beacon.y)
 		sensors[sensor] = beacon
 	}
 	return d15p1(sensors, yLineToMonitor), d15p2(sensors)
