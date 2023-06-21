@@ -92,4 +92,8 @@ func main() {
 	d22p1, d22p2 := day22(d22)
 	fmt.Println("day 22 part 1 -> ", d22p1)
 	fmt.Println("day 22 part 2 -> ", d22p2)
+
+	d23p1, d23p2 := day23(d23)
+	fmt.Println("day 23 part 1 -> ", d23p1)
+	fmt.Println("day 23 part 2 -> ", d23p2)
 }
