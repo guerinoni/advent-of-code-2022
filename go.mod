@@ -3,6 +3,7 @@ module aoc22
 go 1.19
 
 require (
+	github.com/oleiade/lane/v2 v2.0.0
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/exp v0.0.0-20230425010034-47ecfdc1ba53
 )
